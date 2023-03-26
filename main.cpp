@@ -1,3 +1,4 @@
+
 #include "LorenzAttractor.h"
 #include <Graphics.hpp>
 
@@ -16,6 +17,7 @@ int main()
   
   
   /// Important part is here
-  
-  LorenzAttractor.run(window);
+    LorenzAttractor attractor;  
+    attractor.run(window);
+    return 0;
 }
