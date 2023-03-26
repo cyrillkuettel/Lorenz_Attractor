@@ -369,9 +369,9 @@ void LorenzAttractor::update()
 
 
 	// Change speed
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::PageUp))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))
 		speed += 0.025f;
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::PageDown))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))
 		speed -= 0.025f;
 }
 

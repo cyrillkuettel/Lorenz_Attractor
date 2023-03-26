@@ -47,9 +47,9 @@ private:
 	std::vector<std::vector<float>> trail_colours_params;
 
 	// Visual parameters
-	unsigned num_points = 2;
-	unsigned trail_length = 50;
-	float speed = 0.0f;
+	unsigned num_points = 1000;
+	unsigned trail_length = 500;
+	float speed = 2.0f;
 
 	// Constants
 	float pi = 3.141f;
