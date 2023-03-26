@@ -1,36 +1,18 @@
 # Coding-Projects
-A collection of projects, graphical or otherwise.
 
-This project uses SFML 2.5.1
+## Compile and run
 
-To run any of the programs, create a main.cpp file, include "program.h" and write Program.run(window);
+1. Download SFML
 
-example for Visual Studio 2017 to run LorenzAttractor:
+2. 
 
-main.cpp
-```cpp
-#include "stdafx.h"
-#include "LorenzAttractor.h"
-#include <SFML/Graphics.hpp>
-
-int main()
-{
-  /// Create a window
-  
-  bool isFullscreen = true;
-  sf::RenderWindow window;
-	window.create(sf::VideoMode(1980, 1080), "Coding Projects", (isFullscreen ? sf::Style::Fullscreen : sf::Style::Default), sf::ContextSettings());
-	window.setPosition(sf::Vector2i(0, 0));
-  window.setVerticalSyncEnabled(true); 
-	window.setFramerateLimit(60);
-  
-  
-  /// Important part is here
-  
-  LorenzAttractor.run(window);
-}
+```shell
+g++ main.cpp LorenzAttractor.cpp -o main -lsfml-graphics -lsfml-window -lsfml-system -I/Library/Frameworks/SFML.framework/Headers -I/Users/cyrill/Downloads/SFML-2.5.1-macos-clang/include/ -L/Users/cyrill/Downloads/SFML-2.5.1-macos-clang/lib -L/Users/cyrill/Downloads/SFML-2.5.1-macos-clang/extlibs -std=c++17
+./main
 ```
-Controls : 
+## Controls
+
+
 H to switch to the next attractor
 
 W/A/S/D for moving in the plane 
