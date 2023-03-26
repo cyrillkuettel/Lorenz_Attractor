@@ -30,16 +30,16 @@ LorenzAttractor::LorenzAttractor()
 
 	colours =
 	{
-		sf::Color::Color(115, 62, 101, 42), // 42
-		sf::Color::Color(255, 126, 210, 127),
-		sf::Color::Color(109, 193, 202, 179),
-		sf::Color::Color(135, 216, 10, 203),
-		sf::Color::Color(125, 26, 133, 99),
-		sf::Color::Color(8, 161, 163, 57),
-		sf::Color::Color(134, 184, 38, 183),
-		sf::Color::Color(132, 159, 149, 188),
-		sf::Color::Color(100, 195, 167, 160),
-		sf::Color::Color(190, 242, 126, 252),
+		sf::Color(115, 62, 101, 42), // 42
+		sf::Color(255, 126, 210, 127),
+		sf::Color(109, 193, 202, 179),
+		sf::Color(135, 216, 10, 203),
+		sf::Color(125, 26, 133, 99),
+		sf::Color(8, 161, 163, 57),
+		sf::Color(134, 184, 38, 183),
+		sf::Color(132, 159, 149, 188),
+		sf::Color(100, 195, 167, 160),
+		sf::Color(190, 242, 126, 252),
 	};
 
 	trail_colours_params =
@@ -450,7 +450,7 @@ void LorenzAttractor::draw(sf::RenderWindow &window)
 
 			// Calculate trail colours
 			sf::Color fade;
-			fade = sf::Color::Color(
+			fade = sf::Color(
 				clamp(colours[u].r + trail_colours_params[u][0] * Magnitude(line[1].position - line[0].position)),
 				clamp(colours[u].g + trail_colours_params[u][1] * Magnitude(line[1].position - line[0].position)),
 				clamp(colours[u].b + trail_colours_params[u][2] * Magnitude(line[1].position - line[0].position)),
@@ -491,7 +491,7 @@ void LorenzAttractor::draw(sf::RenderWindow &window)
 
 	// Display then clear the screen
 	window.display();
-	window.clear(sf::Color::Color(0, 0, 0, 255));
+	window.clear(sf::Color(0, 0, 0, 255));
 }
 
 void LorenzAttractor::run(sf::RenderWindow &window)
