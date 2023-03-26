@@ -1,16 +1,21 @@
-# Coding-Projects
+# Lorenz Attractor
 
-## Compile and run
+![](img/screenshot.png)
+
+Compile and run
 
 1. Download SFML
 
-2. 
+2. Run this:
 
 ```shell
-g++ main.cpp LorenzAttractor.cpp -o main -lsfml-graphics -lsfml-window -lsfml-system -I/Library/Frameworks/SFML.framework/Headers -I/Users/cyrill/Downloads/SFML-2.5.1-macos-clang/include/ -L/Users/cyrill/Downloads/SFML-2.5.1-macos-clang/lib -L/Users/cyrill/Downloads/SFML-2.5.1-macos-clang/extlibs -std=c++17
+g++ main.cpp LorenzAttractor.cpp -o main -lsfml-graphics -lsfml-window -lsfml-system -I/Library/Frameworks/SFML.framework/Headers -I/Users/cyrill/Downloads/SFML-2.5.1-macos-clang/include/ -L/Users/cyrill/Downloads/SFML-2.5.1-macos-clang/lib -L/Users/cyrill/Downloads/SFML-2.5.1-macos-clang/extlibs -std=c++17 -O3
 ./main
 ```
-## Controls
+
+Tested on OS X, adjust the paths accordingly.
+
+Controls
 
 
 H to switch to the next attractor
@@ -21,4 +26,3 @@ Space/Shift to move up and down
 
 Up/Down/Left/Right to turn the camera
 
-These will feel familiar to Minecraft players ;)
